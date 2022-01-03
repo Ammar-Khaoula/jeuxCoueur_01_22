@@ -48,7 +48,8 @@
     align-items: center;
   }
   .face img {
-    width: 180px;
+    width: 150px;
+    height: 120px;
   }
   .arriere {
     background: #333;
@@ -66,5 +67,25 @@
     padding: 20px;
     font-size: 30px;
     font-weight: bolder;
+    color: blanchedalmond;
+  }
+  #vert{
+    background-color: green;
+  }
+  #rouge{
+    background-color: red;
+  }
+  #jaune{
+    background-color: yellow;
+    color: black;
+  }
+  #bleu{
+    background-color: blue;
+  }
+  #violet{
+    background-color: blueviolet;
+  }
+  #blache{
     background-color: white;
+    color: black;
   }
