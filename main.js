@@ -1,11 +1,39 @@
 const cartes = document.querySelectorAll('.carte');
 
+
 let carteRetournee = false;
 let premiereCarte, secondeCarte;
 let verouillage = false;
 
+let balls = document.getElementsByClassName("ball");
+
+document.onmousemove = function () {
+    let x = event.clientX * 100 / window.innerWidth + "%";
+    let y = event.clientY * 100 / window.innerHeight + "%";
+
+    for (i = 0; i < 2; i++) {
+        balls[i].style.left = x;
+        balls[i].style.top = y;
+        balls[i].style.transform = "translate(-"+ x + ",-"+ y +")"
+    }
+};
+
+//''''''''''lecture le text'''''''''''
+function lireCarte() {
+    let texte = "koukou";
+    let parole = new SpeechSynthesisUtterance();
+    parole.volume = 1;
+
+    parole.text = texte;
+    speechSynthesis.speak(parole);
+    console.log(parole);
+};
+
+
 cartes.forEach(carte => {
-    carte.addEventListener('click', retourneCarte)
+    carte.addEventListener('click', retourneCarte);
+    carte.addEventListener('click', lireCarte);
+    
 })
 
 function retourneCarte(){

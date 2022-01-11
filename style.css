@@ -8,7 +8,41 @@
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #fde273 , #A3E4D7 ); 
   }
-  
+  header{
+    background: rgb(252, 204, 212);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+
+  }
+  .eyes{
+     position: absolute;
+     transform: translateY(-50%);
+     text-align: center;
+  }
+  .eye{
+   width: 240px;
+   height: 120px;
+   background: white;
+   display: inline-block;
+   margin: 40px;
+   border-radius: 50%;
+   position: relative;
+   top: 80px;
+   left: 160px;
+   overflow: hidden;
+  }
+  .ball{
+    width: 40px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+  }
   .grille {
     background: rgb(195,195,195);
     display: grid;
